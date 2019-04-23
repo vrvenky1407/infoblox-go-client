@@ -181,9 +181,9 @@ func (wrb *WapiRequestBuilder) BuildUrl(t RequestType, objType string, ref strin
 			vals.Set("_return_fields", strings.Join(returnFields, ","))
 		}
 		// TODO need to get this from individual objects in future
-		if queryParams.forceProxy {
-			vals.Set("_proxy_search", "GM")
-		}
+		//if queryParams.forceProxy {
+		//	vals.Set("_proxy_search", "GM")
+		//}
 		qry = vals.Encode()
 	}
 
